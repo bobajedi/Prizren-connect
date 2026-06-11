@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/vue'
+import vue from '@vitejs/plugin-vue' // <-- Tam olarak burayı '@vitejs/plugin-vue' yaptık!
 
-// Vercel'de ve yerelde sorunsuz derlenen standart Vite ayarı
 export default defineConfig({
   plugins: [vue()],
   resolve: {
